@@ -12,3 +12,5 @@ CREATE TABLE student (
     aadhar_card_number VARCHAR(12) NOT NULL UNIQUE,
     password VARCHAR(8) NOT NULL
 );
+
+	        	  PreparedStatement pstmt =conn.prepareStatement( "INSERT INTO student (first_name, last_name, email, phone_number, gender, address, birthdate, aadhar_card_number,password) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)")
