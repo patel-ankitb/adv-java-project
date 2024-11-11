@@ -1,0 +1,14 @@
+---------------------DB connection ---------------------
+
+CREATE TABLE student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone_number VARCHAR(10) NOT NULL,
+    gender ENUM('male', 'female', 'other') NOT NULL,
+    address TEXT NOT NULL,
+    birthdate DATE NOT NULL,
+    aadhar_card_number VARCHAR(12) NOT NULL UNIQUE,
+    password VARCHAR(8) NOT NULL
+);
