@@ -111,7 +111,7 @@
     <input type="text" id="aadharcard" name="aadharcard" required pattern="[0-9]{12}" title="Please enter a 12-digit Aadhar card number">
 
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+    <input type="password" id="password" name="password" required  title="Password must be at least 8 characters long">
 
     <input type="submit" value="Submit">
 </form>

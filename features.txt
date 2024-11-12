@@ -13,4 +13,25 @@ CREATE TABLE student (
     password VARCHAR(8) NOT NULL
 );
 
-	        	  PreparedStatement pstmt =conn.prepareStatement( "INSERT INTO student (first_name, last_name, email, phone_number, gender, address, birthdate, aadhar_card_number,password) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)")
+
+PreparedStatement pstmt =conn.prepareStatement( "INSERT INTO student (first_name, last_name, email, phone_number, gender, address, birthdate, aadhar_card_number,password) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)")
+
+------------------------
+
++----+------------+-----------+--------------------------+--------------+--------+-----------------------------+------------+--------------------+-----------+
+| id | first_name | last_name | email                    | phone_number | gender | address                     | birthdate  | aadhar_card_number | password  |
++----+------------+-----------+--------------------------+--------------+--------+-----------------------------+------------+--------------------+-----------+
+|  1 | Ankit      | Patel     | patelankit25897@gmil.com | 9510357549   | male   | Bhargav Society kuber nagar | 2004-09-30 | 741236589586       | 12345678  |
+|  2 | sunny      | patel     | sunnypatel23@gmail.com   | 6598472536   | male   | shaym-darshan society       | 2003-06-06 | 789452367941       | sunny123  |
+|  3 | harsh      | Patel     | harshpatel21@gmail.com   | 8529637411   | male   | bapa-sitaram chok           | 2005-08-26 | 123452145869       | harsh147  |
+|  4 | vidhi      | patel     | vidhipatel1310@gmail.com | 7897243658   | female | Mahalakshmi society         | 2003-10-13 | 906054017146       | vidhi@123 |
+|  5 | alok       | shah      | alokshah310@gmail.com    | 7897278989   | male   | shantlila society           | 2003-10-13 | 478512545623       | alok@123  |
++----+------------+-----------+--------------------------+--------------+--------+-----------------------------+------------+--------------------+-----------+
+
+
+------------All queryy------------------
+
+
+-->  select * from student;
+---> ALTER TABLE student MODIFY password VARCHAR(255);
+---> update student set gender = "female" where id = 4;
